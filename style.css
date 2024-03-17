@@ -327,8 +327,3 @@ background-color: #17667f;
     height: 50px;
     cursor: pointer;
 }
-@media only screen and (max-width: px) {
-    body {
-      background-color: lightblue;
-    }
-  }
