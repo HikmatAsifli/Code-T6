@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 10px;
+}
+nav ul li{
+    display: none;
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* header */
+header{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(/img/bg-masthead.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .container{
+    flex-direction: column;
+}
+h1{
+    font-size: 90px;
+    text-align: center;
+}
+.header-text{
+    margin-bottom: 50px;
+}
+.btn{
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    width: 140px;
+    transition: 0.3s;
+}
+.btn-primary{
+    background-color: #1D809F;
+    text-decoration: none;
+}
+.btn-primary:hover{
+    background-color: #196d87;
+}
+
+/* About */
+.about-upper{
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    position: relative;
+}
+.about-upper-text{
+    padding: 40px 0;
+    
+}
+.about-upper h2{
+    font-size: 30px;
+}
+.about-upper p{
+    font-size: 18px;
+}
+.btn-dark{
+    background-color: #212529;
+    text-decoration: none;
+}
+.btn-about{
+    position: absolute;
+    bottom: -50%;
+    left: 40%;
+}
+.btn-about:hover{
+    background-color:#373b3e;
+}
+
+/* Services */
+.services-section{
+    background-color: #1D809F;
+    padding: 100px 0;
+    position: relative;
+}
+.services-section .container{
+    flex-direction: column;
+}
+.services-upper{
+
+}
+.services-upper h3{
+    font-size: larger;
+    color: #ecb80a;
+    text-align: center;
+}
+.services-upper h2{
+    font-size: 40px;
+    color: white;
+}
+.services-lower{
+    display: flex;
+    justify-content: space-around;
+}
+.services-lower .icon{
+    background-color: #fff;
+    color: #1D809F;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.services-lower h4{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.services-lower p{
+    color: white;
+    font-size: 15px;
+}
+.services-lower .responsive{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Callout */
+.callout-section{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(/img/portfolio-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+}
+.callout-section .container{
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.callout-section .container h2{
+    font-size: 50px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+}
+.callout-section .btn-callout{
+    width: 150px;
+}
+
+/* Portfolio */
+#portfolio .container{
+    flex-direction: column;
+}
+.portfolio-section{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-item {
+    display: inline-block;
+    max-width: 400px;
+    transition: 0.3s;
+    position: relative;
+}
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-item .caption{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-item .caption-content{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    color: white;
+}
+.portfolio-section-heading{
+    padding: 10px;
+}.portfolio-section-heading h3{
+    font-size: 20px;
+    color: #ecb80a;
+    text-align: center;
+}
+.portfolio-section-heading h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.portfolio-item .h2{
+    padding: 10px 0;
+}
+.portfolio-item:hover{
+    transform: scale(0.8);
+}
+
+/* Call to Action */
+.action-section{
+    background-color: #1D809F;
+    height: 30vh;
+    position: relative;
+}
+.action-section h2{
+    color: #fff;
+    position: absolute;
+    top: 30%;
+}
+.action-section a{
+    text-decoration: none;
+}
+.action-section .container{
+    display: flex;
+}
+.action-section a{
+    margin: 10px;
+}
+.action-section .btn-light{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin-top: 140px;
+}
+.action-section .btn-dark{
+    margin-top: 140px;
+}
+.btn-light:hover{
+    background-color:#d3d4d5;
+}
+.btn-dark:hover{
+    background-color: #424649;
+}
+
+/* Map */
+.map-iframe{
+    width: 100%;
+}
+
+/* Footer */
+.footer{
+    padding: 50px 0 0 0;
+}
+.footer .container ul{
+    display: flex;
+    flex-direction: row;
+}
+.footer .container ul li{
+    list-style: none;
+    padding: 10px;
+}
+.footer .container{
+    display: flex;
+    flex-direction: column;
+}
+.footer .container a{
+    text-decoration: none;
+    color: white;
+}
+.footer .container ul li i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1D809F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container ul li i:hover{
+background-color: #17667f;
+}
+.text-muted{
+    padding: 40px;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(52, 58, 64, 0.5);
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+@media only screen and (max-width: px) {
+    body {
+      background-color: lightblue;
+    }
+  }
